@@ -254,6 +254,12 @@ body.loaded {
     text-align: center;
 }
 
+@media (max-width: 480px) {
+	.row1 {
+		margin-bottom: 0;
+	}
+}
+
 .row1 h1 {
     font-size: 20px;
 	color: rgb(255,239,211);
@@ -273,6 +279,12 @@ body.loaded {
 
 .title-with-line {
 	 display: inline-block;
+}
+
+@media (max-width: 480px) {
+	.title-with-line {
+		text-shadow: 0 0 0.1rem black;
+	}
 }
 
 .row1 ul.services {
@@ -375,6 +387,14 @@ ul.services li{
     transition: opacity 4s ease, transform 4s ease;
 }
 
+@media (max-width: 480px) {
+	.row2 {
+		margin: 10px auto 100px auto;
+		text-shadow: 0 0 .1rem black;
+		gap: 50px;
+	}
+}
+
 .row2 h1 {
     width: 45%; /* Keep text width at 45% */
     flex-shrink: 0; /* Prevents shrinking */
@@ -419,6 +439,7 @@ ul.services li{
 @media (max-width: 480px) {
 	.pagetitle{
 		font-size: 14px;
+		text-shadow: 0 0 .1rem black;
 	}
 }
 
@@ -483,6 +504,7 @@ ul.services li{
 
 .service1 li, .service2 li, .service3 li, .service4 li, .service5 li, .service6 li, .service7 li, .service8 li, .service9 li, .service10 li, .service11 li, .service12 li{
 	font-size: 16px;
+	list-style-type: none;
 	line-height: 2em;
 	color: white;
 	text-shadow: 0 0 .3rem black;
@@ -504,6 +526,7 @@ ul.services li{
 .service1 ul, .service2 ul, .service3 ul, .service4 ul, .service5 ul, .service6 ul, .service7 ul, .service8 ul, .service9 ul, .service10 ul, .service11 ul, .service12 ul {
     max-height: 0; /* Start hidden */
     overflow: hidden;
+	list-style-type: none;
     transition: max-height 0.5s ease-out, margin 0.3s ease-out, padding 0.3s ease-out; /* Smooth transition */
     margin: 0;
     padding: 10;
@@ -613,6 +636,7 @@ ul.services li{
 @media (max-width: 480px) {
 	.accreditations_text h1{
 		font-size: 14px;
+		text-shadow: 0 0 0.1rem black;
 	}
 }
 
