@@ -729,6 +729,7 @@ ul.services li{
 .contact_information p {
 	color: white;
 	text-shadow: 0 0 .3rem black;
+	text-decoration: none;
 }
 
 .linkedin {
