@@ -282,7 +282,7 @@ body.loaded {
 }
 
 @media (max-width: 480px) {
-	.title-with-line {
+	.title-with-line h1{
 		text-shadow: 0 0 0.1rem black;
 	}
 }
