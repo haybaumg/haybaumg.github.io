@@ -1,0 +1,738 @@
+@font-face {
+	font-family: 'Roboto Medium'; 
+	src: url('Fonts/Roboto/Roboto-Medium.ttf');
+}
+
+body {
+	font-family: Roboto Medium;
+	/*background-color: white;*/
+	width: 100%;
+	margin: 0 auto;
+	min-width: 700px;
+	padding: 0.1;}
+	
+h1 {
+	line-height: 1.4em;}
+
+/*p {
+	font-size: 16px;
+	line-height: 1.4em;}*/
+	
+p a{
+	color: rgb(59,59,59); /* Adjust link text color */
+}
+
+p a:hover{
+	color: black;
+}
+
+li {
+	color: rgb(59,59,59);
+	line-height: 1.4em;}
+	
+#content {
+	margin: 0% auto;
+	width: 100%;
+	clear: both;
+	}
+	
+/* Style for the header container */
+#header {
+	width: 100%;
+	max-width: 100vw;
+    display: flex; /* Use flexbox to align children horizontally */
+    align-items: center; /* Center items vertically */
+    /*justify-content: space-between; /* Spread items across the header */
+    padding: 5px 5px; /* Add some padding for spacing */
+	box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0px 2px 2px #777777;
+    min-width: 600px;
+    z-index: 1000;
+    opacity: 0.9;
+    position: sticky;
+    top: 0;
+	overflow: hidden;
+	flex-shrink: 0;
+}
+
+#header, #footer {
+	margin: 0% auto;
+	max-width: 100%;
+	width: 100%;
+	color: white;
+	}
+	
+/* Style for the logo */
+#header .logo {
+    margin-right: 0px; /* Space between logo and nav */
+	width: 177.375px; 
+	height: 84.375px;
+}
+
+/* Navigation container styling */
+#nav {
+    background-color: white;
+    padding: 0.5em ;
+	flex-grow: 1; /* Allow the nav to fill the remaining space */
+    flex-shrink: 1; /* Ensures it doesn't exceed available space */
+    min-width: 0; /* Prevents unnecessary expansion */
+	max-width: 100%;
+}
+
+/* Navigation buttons styling */
+#nav ul.buttons {
+	max-width: 100%;
+    display: flex;
+    justify-content: center; /* Align buttons to the right */
+    margin-right: 187.375px;
+    list-style: none;
+    align-it`s: center; /* Align vertically */
+	padding: 0;
+}
+
+/* Navigation links */
+#nav ul.buttons li a {
+    text-decoration: none;
+    color: Gray; /* Adjust link text color */
+	font-size: 20px;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: transparent; /* Default background */
+}
+
+/* Hover effect for links */
+#nav ul.buttons li a:hover {
+    color: black;
+	border-style: solid;
+	border-color: black;
+	border-radius: 5px;
+	border-width: 1px;
+}
+
+/* Logo adjustments */
+#nav ul.buttons li img.logo {
+    margin-right: auto; /* Push other items to the right */
+}
+
+#header a.icon {
+	display: none;
+}		
+
+@media (max-width: 480px) {
+	body {
+		min-width: 320px;
+	}
+	
+	#header .navimages {
+		display: flex;
+		align-items: center; /* Align items vertically */
+		justify-content: left; /* Align items to the left */
+		width: 100%;
+		gap: 130px;
+		margin-left: 20px;
+	}
+	
+	#header {
+		min-width: 320px;
+		position: relative;
+		display: flex; 
+		flex-direction: column;
+	}
+	
+	#nav {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		z-index: 100;
+		text-align: center;
+	}
+	
+	#nav ul.buttons {
+		display: none;
+		width: 100%;
+		padding: 0;
+		margin-top: 10px;
+		overflow: hidden;
+		z-index: 99;
+	}
+	
+	#header a.icon {
+		background: transparent;
+		font-size: 25px;
+		display: block;
+		color: grey;
+	}
+}
+	
+/* Loaded body */
+body.loaded {
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+/* Default banner */
+.banner {
+  position: relative;
+  /*width: 100%;*/
+  height: 60rem;
+  padding: 0 5%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0px 2px 10px black;
+}
+
+@media (max-width: 480px) {
+	.banner {
+		height: 20rem;
+	}
+}
+
+/* Default image container */
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform: translate3d(0,0,0) scale(1.25);
+  background: black url(images/PurchasedCoolingTowers.jpg) no-repeat center; 
+  background-size: cover;
+}
+
+/* Loaded image container */
+.loaded .banner .background {
+  transform: scale(1);
+  transition: 15s transform;
+}
+
+/* Other stuff */
+.banner h1 {
+  color: #EEE;
+  font-size: 40px;
+  margin-top: 100px;
+  line-height: 40rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 .3rem black;
+}
+
+@media (max-width: 480px) {
+	.banner h1{
+	font-size: 20px;
+	margin-top: 100px;
+	line-height: 2rem;
+	width: 50%;
+	}
+}
+
+.column2 {
+	margin: 0;
+	padding-top: 1px; /*to keep the top and bottom margins from collapsing*/
+	padding-bottom: 1px;
+	background: linear-gradient(0.875turn, rgb(59, 59, 59), rgb(122, 156, 198));
+	min-width: 600px;
+	flex-grow: 1;
+	}
+	
+@media (max-width: 480px) {
+	.column2 {
+		min-width: 320px;
+	}
+}
+	
+.row1 {
+	margin-top: 40px;
+	margin-bottom: 100px;
+	padding: 0px;
+	padding-left: 0px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+	align-items: center;
+    width: 100%;
+	max-width: 100%;
+    text-align: center;
+}
+
+.row1 h1 {
+    font-size: 20px;
+	color: rgb(255,239,211);
+	text-shadow: 0 0 .3rem black;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    width: 100%; /* Shrinks the h1 to fit its content */
+    text-align: center; /* Keep it left-aligned */
+    align-self: center; /* Align it to the start of the list */
+}
+
+@media (max-width: 480px) {
+	.row1 h1 {
+		font-size: 14px;
+	}
+}
+
+.title-with-line {
+	 display: inline-block;
+}
+
+.row1 ul.services {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Keeps the list centered */
+    width: max-content; /* Prevents unnecessary stretching */
+    text-shadow: 0 0 .3rem black;
+}
+
+.list-item-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Ensures text stays properly aligned */
+    width: 100%;
+    opacity: 0;
+    transform: translateY(40px) translateX(-30px); /* Start lower and slightly to the right */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Apply a staggered effect where each item moves upward and ends slightly to the left */
+.row1.visible .list-item-wrapper {
+    opacity: 1;
+    transform: translateY(0) translateX(var(--offsetX, 0px)); /* Moves up and offsets slightly left */
+}
+
+ul.services li{
+	list-style-type:none;
+	font-size: 24px;
+	line-height: 3em;
+	color: white;
+	
+}
+
+@media (max-width: 480px) {
+	ul.services li {
+		padding-left: 5 px;
+		text-align: left;
+		font-size: 14px;
+		line-height: 3em;
+		margin-top: 0px;
+	}
+	
+}
+
+@media (max-width: 480px) {
+	ul.services {
+		max-width: 100%;
+	}
+}
+
+.list-item-wrapperlink a {
+	padding: 10px;
+	margin-top: 20px;
+	background-color: rgb(229,122,28);
+	border-width: 1px;
+	border-radius: 10px;
+	color: white; /* Adjust link text color */
+    display: flex; /* Makes the border fit content tightly */
+    align-items: center; /* Ensures vertical alignment */
+    justify-content: center;
+	height: auto; min-height: 60px;
+	font-size: 16px;
+	text-decoration: none;
+    background-color: rgb(229,122,28);
+    text-shadow: none;
+    line-height: normal; /* Prevents extra height */
+    vertical-align: middle; /* Aligns inside flex container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+@media (max-width: 480px) {
+	.list-item-wrapperlink a {
+		font-size: 12px;
+		line-height: 1em;
+	}
+}
+
+.list-item-wrapperlink a:hover {
+    color: rgb(59,59,59);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Adds subtle shadow */
+}
+
+.row2 {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items to the left */
+    gap: 100px; /* Reduce space between text and image */
+    flex-wrap: wrap; /* Prevents breaking on small screens */
+    color: white;
+    text-shadow: 0 0 .3rem black;
+    width: 90%; /* Center and keep within a reasonable width */
+    margin: 40px auto 100px auto; /* Centering */
+    padding: 5px;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+.row2 h1 {
+    width: 45%; /* Keep text width at 45% */
+    flex-shrink: 0; /* Prevents shrinking */
+    margin: 0; /* Remove unnecessary margins */
+}
+
+@media (max-width: 480px) {
+	.row2 h1 {
+		width: 90%;
+		font-size: 20px;
+	}
+}
+
+.row2-image {
+    width: 30%; /* Adjust based on preference */
+    min-width: 500px; 
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+	.row2-image {
+		width: 80%;
+		max-width: 300px;
+		min-width: 100px;
+	}
+}
+	
+.row2.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
+	
+.pagetitle{
+	color: white;
+	text-shadow: 0 0 .3rem black;
+	width: 50%;
+	margin: 0% auto;
+}
+
+@media (max-width: 480px) {
+	.pagetitle{
+		font-size: 14px;
+	}
+}
+
+.pagetitle h1{
+	text-align: center;
+}
+	
+.service1{
+	width:50%;
+	margin: 0% auto;
+	margin-top: 50px;
+}
+
+.service2, .service3, .service4, .service5, .service6, .service7, .service8, .service9, .service10, .service11{
+	width:50%;
+	margin: 0% auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.service12{
+	width:50%;
+	margin: 0% auto;
+	margin-bottom: 100px;
+}
+
+@media (max-width: 480px) {
+	.service1, .service2, .service3, .service4, .service5, .service6, .service7, .service8, .service9, .service10, .service11, .service12{
+		width: 90%;
+	}
+}
+
+.service1 h1, .service2 h1, .service3 h1, .service4 h1, .service5 h1, .service6 h1, .service7 h1, .service8 h1, .service9 h1, .service10 h1, .service11 h1, .service12 h1 {
+    cursor: pointer;
+	font-size: 20px;
+	color: grey;
+	margin-top: 15px;
+	margin-bottom: 0;
+	border-top-style: solid;
+	border-color: black;
+	border-width: 1px;
+    text-transform: uppercase;
+    text-align: left; /* Keep it left-aligned */
+	background-color: white; /* Adds background to indicate it's clickable */
+	padding: 10px;
+	border-radius: 0px;
+	position: relative; /* Needed for icon positioning */
+}
+
+@media (max-width: 480px) {
+	.service1 h1, .service2 h1, .service3 h1, .service4 h1, .service5 h1, .service6 h1, .service7 h1, .service8 h1, .service9 h1, .service10 h1, .service11 h1, .service12 h1 {
+		font-size: 12px;
+		margin-top: 10px;
+	}
+}
+
+/* Hover effect - adds shadow */
+.service1 h1:hover, .service2 h1:hover, .service3 h1:hover, .service4 h1:hover, .service5 h1:hover, .service6 h1:hover, .service7 h1:hover, .service8 h1:hover, .service9 h1:hover, .service10 h1:hover, .service11 h1:hover, .service12 h1:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    transform: scale(1.02); /* Slight scaling effect for interactivity */
+}
+
+.service1 li, .service2 li, .service3 li, .service4 li, .service5 li, .service6 li, .service7 li, .service8 li, .service9 li, .service10 li, .service11 li, .service12 li{
+	font-size: 16px;
+	line-height: 2em;
+	color: white;
+	text-shadow: 0 0 .3rem black;
+}
+
+@media (max-width: 480px) {
+	.service1 li, .service2 li, .service3 li, .service4 li, .service5 li, .service6 li, .service7 li, .service8 li, .service9 li, .service10 li, .service11 li, .service12 li{
+	font-size: 12px;
+	}
+}
+
+@media (max-width: 480px) {
+	.service1 li::marker, .service2 li::marker, .service3 li::marker, .service4 li::marker, .service5 li::marker, .service6 li::marker, .service7 li::marker, .service8 li::marker, .service9 li::marker, .service10 li::marker, .service11 li::marker, .service12 li::marker{
+		font-size: 2em;
+	}
+}
+
+/* Initially hide the lists */
+.service1 ul, .service2 ul, .service3 ul, .service4 ul, .service5 ul, .service6 ul, .service7 ul, .service8 ul, .service9 ul, .service10 ul, .service11 ul, .service12 ul {
+    max-height: 0; /* Start hidden */
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, margin 0.3s ease-out, padding 0.3s ease-out; /* Smooth transition */
+    margin: 0;
+    padding: 10;
+}
+
+/* When active, expand the section */
+.service1.active ul, .service2.active ul, .service3.active ul, .service4.active ul, .service5.active ul, .service6.active ul, .service7.active ul, .service8.active ul, .service9.active ul, .service10.active ul, .service11.active ul, .service12.active ul {
+    max-height: 2000px; /* Adjust based on content */
+    margin-top: 10px; /* Add spacing only when expanded */
+    padding: 10px; /* Add padding only when expanded */
+}
+
+/* Add a plus/minus sign */
+.service1 h1::after, .service2 h1::after, .service3 h1::after, .service4 h1::after, .service5 h1::after, .service6 h1::after, .service7 h1::after, .service8 h1::after, .service9 h1::after, .service10 h1::after, .service11 h1::after, .service12 h1::after {
+    content: "+"; /* Default to plus sign */
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* When expanded, change the plus sign to a minus */
+.service1.active h1::after, .service2.active h1::after, .service3.active h1::after, .service4.active h1::after, .service5.active h1::after, .service6.active h1::after, .service7.active h1::after, .service8.active h1::after, .service9.active h1::after, .service10.active h1::after, .service11.active h1::after, .service12.active h1::after {
+    content: "-";
+}
+
+.list-contact {
+    list-style: none; /* Removes bullets from this specific list */
+    padding: 0; /* Ensures no extra padding that might affect alignment */
+    margin: 0; /* Ensures consistent spacing */
+}
+
+.list-contact li {
+    list-style-type: none; /* Removes bullet from individual list items */
+}
+
+
+.list-contact a {
+    display: inline-block; /* Allows width to fit content */
+    width: auto; /* Ensures the width only takes up as much space as the text */
+    padding: 10px; /* Keeps some padding for a button-like appearance */
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+    background-color: rgb(229,122,28);
+    border-width: 1px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: none;
+    line-height: normal;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+@media (max-width: 480px) {
+	.list-contact a {
+		font-size: 14px;
+	}
+}
+
+
+.list-contact a:hover {
+    color: rgb(59,59,59);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Adds subtle shadow */
+}
+
+.accreditations {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items to the left */
+    gap: 100px; /* Reduce space between text and image */
+    flex-wrap: wrap; /* Prevents breaking on small screens */
+    color: white;
+    text-shadow: 0 0 .3rem black;
+    width: 90%; /* Center and keep within a reasonable width */
+    margin: 40px auto 100px auto; /* Centering */
+    padding: 5px;
+}
+
+@media (max-width: 480px) {
+	.accreditations {
+		gap: 15px;
+	}
+}
+
+.accreditations_text {
+    width: 25%; 
+    flex-shrink: 0; /* Prevents shrinking */
+    margin: 0; /* Remove unnecessary margins */
+}
+
+@media (max-width: 480px) {
+	.accreditations_text {
+		width: 40%;
+	}
+}
+
+.accreditations_text h1{
+	font-size: 24px;
+}
+
+@media (max-width: 480px) {
+	.accreditations_text h1{
+		font-size: 14px;
+	}
+}
+
+.accreditations_text p{
+	font-size: 20px;
+}
+
+.beap{
+	width: 100px;
+	height: 100px;
+}
+
+@media (max-width: 480px) {
+	.beap{
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@media (max-width: 480px) {
+	.accreditations_text p{
+		font-size: 12px;
+	}
+}
+
+.profile {
+    width: 30%; /* Adjust based on preference */
+    min-width: 300px; /* Ensure it doesn't get too large */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+	.profile {
+		min-width: 150px;
+		width: 50%;
+	}
+}
+
+.teamtext {
+	width: 50%;
+	margin: 0% auto;
+}
+
+@media (max-width: 480px) {
+	.teamtext {
+		width: 90%;
+	}
+}
+
+.teamtext p{
+	font-size: 20px;
+	color: white;
+	text-shadow: 0 0 .3rem black;
+	line-height: 1.5em;
+}
+
+@media (max-width: 480px) {
+	.teamtext p{
+		font-size: 14px;
+	}
+}
+
+.pagetitle h1{
+	margin-top: 0;
+	padding-top: 15px;
+}
+
+.filler {
+	background: linear-gradient(0.875turn, rgb(59, 59, 59), rgb(122, 156, 198));
+	min-width: 300px;
+	margin-top: 0;
+	height: 100vh;
+}
+
+.contact_information {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: max-content;
+	margin: 0% auto;
+}
+
+@media (max-width: 480px) {
+	.contact_information {
+		font-size: 14px;
+	}
+}
+
+.contact_information p {
+	color: white;
+	text-shadow: 0 0 .3rem black;
+}
+
+.linkedin {
+	color: white;
+	text-decoration: none;
+}
+
+.linkedin a:hover{
+	color: white;
+	text-shadow: 0 0 .9rem black;
+}
+
+ .footer {
+	 color: white;
+ } 
+
+@media (max-width: 1500px) {
+	.footer {
+		font-size: 10px;
+	}
+}
+
+ .footer2 {
+	 color: white;
+ } 
+
+@media (max-width: 1500px) {
+	.footer2 {
+		font-size: 10px;
+	}
+}
