@@ -744,7 +744,20 @@ ul.services li{
 
  .footer {
 	 color: white;
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 padding: 0px;
+	 width: 100%;
  } 
+ 
+.footer.copyright{
+	text-align: left;
+}
+
+.footer.location{
+	text-align: center;
+}
 
 @media (max-width: 1500px) {
 	.footer {
@@ -754,10 +767,21 @@ ul.services li{
 
  .footer2 {
 	 color: white;
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 padding: 0px;
+	 width: 100%;
  } 
+ 
+ .footer2.copyright{
+	text-align: left;
+}
+
+.footer2.location{
+	text-align: center;
 
 @media (max-width: 1500px) {
 	.footer2 {
 		font-size: 10px;
 	}
-}
