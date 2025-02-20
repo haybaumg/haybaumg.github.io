@@ -4,7 +4,7 @@ window.onload = function() {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  const rows = document.querySelectorAll(".row1, .row2");
+  const rows = document.querySelectorAll(".row1, .row2, .generalinformationp1, .generalinformation h1, .generalinformationp2, .commercialaudits h1, .cap1, .cap2, .cap3, .video, .industrialaudits h1, .iap1, .industrialauditsp2, .industrialauditsp3, .iap4");
 
   const observer = new IntersectionObserver(
     (entries) => {
