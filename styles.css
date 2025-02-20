@@ -230,6 +230,8 @@ body.loaded {
 	margin: 0;
 	padding-top: 1px; /*to keep the top and bottom margins from collapsing*/
 	padding-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
 	background: linear-gradient(0.875turn, rgb(59, 59, 59), rgb(122, 156, 198));
 	min-width: 600px;
 	flex-grow: 1;
@@ -440,6 +442,7 @@ ul.services li{
 	.pagetitle{
 		font-size: 14px;
 		text-shadow: 0 0 .1rem black;
+		width: 90%;
 	}
 }
 
@@ -553,6 +556,486 @@ ul.services li{
 .service1.active h1::after, .service2.active h1::after, .service3.active h1::after, .service4.active h1::after, .service5.active h1::after, .service6.active h1::after, .service7.active h1::after, .service8.active h1::after, .service9.active h1::after, .service10.active h1::after, .service11.active h1::after, .service12.active h1::after {
     content: "-";
 }
+
+.generalinformation h1{
+	color: white;
+	text-shadow: 0 0 .3rem black;
+	margin-top: 150px;
+	margin-left: 15%;
+	font-size: 28px;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+@media (max-width: 480px) {
+	.generalinformation h1{
+		text-shadow: 0 0 .1rem black;
+		margin-top: 80px;
+		font-size: 20px;
+		margin-left: 5%;
+	}
+}
+
+.generalinformation h1.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
+
+.generalinformationp1 {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items to the left */
+    gap: 100px; /* Reduce space between text and image */
+    flex-wrap: wrap; /* Prevents breaking on small screens */
+    color: white;
+    text-shadow: 0 0 .3rem black;
+    width: 90%; /* Center and keep within a reasonable width */
+    margin: 40px auto 100px auto; /* Centering */
+    padding: 5px;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+@media (max-width: 480px) {
+	.generalinformationp1 {
+		text-shadow: 0 0 .1rem black;
+		gap: 50px;
+	}
+}
+		
+.gip1 {
+    width: 45%; /* Keep text width at 45% */
+    flex-shrink: 0; /* Prevents shrinking */
+    margin: 0; /* Remove unnecessary margins */
+	font-size: 24px;
+	line-height: 1.4em;
+}
+
+@media (max-width: 480px) {
+	.gip1 {
+		width: 90%;
+		font-size: 16px;
+	}
+}
+
+.energy-image {
+    width: 30%; /* Adjust based on preference */
+    min-width: 500px; 
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+	.energy-image {
+		width: 75%;
+		min-width: 200px;
+	}
+}
+
+.generalinformationp1.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
+	
+.generalinformationp2 {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items to the left */
+    gap: 100px; /* Reduce space between text and image */
+    flex-wrap: wrap; /* Prevents breaking on small screens */
+    color: white;
+    text-shadow: 0 0 .3rem black;
+    width: 90%; /* Center and keep within a reasonable width */
+    margin: 40px auto 100px auto; /* Centering */
+    padding: 5px;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+@media (max-width: 480px) {
+	.generalinformationp2 {
+		gap: 10px;
+		text-shadow: 0 0 .1rem black;
+		display: block;
+	}
+}
+
+.gip2 {
+    width: 45%; /* Keep text width at 45% */
+    flex-shrink: 0; /* Prevents shrinking */
+    margin: 0; /* Remove unnecessary margins */
+	font-size: 24px;
+	line-height: 1.4em;
+}
+
+@media (max-width: 480px) {
+	.gip2 {
+		font-size: 16px;
+		width: 90%;
+		margin: 0% auto;
+	}
+}
+
+.bill-image {
+    width: 30%; /* Adjust based on preference */
+    min-width: 500px; 
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+	.bill-image {
+		min-width: 200px;
+		float: left;
+		margin-right: 5px;
+	}
+}
+
+.generalinformationp2.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
+	
+.commercialaudits h1{
+	color: white;
+	text-shadow: 0 0 .3rem black;
+	margin-top: 150px;
+	margin-left: 15%;
+	font-size: 28px;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+@media (max-width: 480px) {
+	.commercialaudits h1{
+		text-shadow: 0 0 .1rem black;
+		margin-top: 80px;
+		font-size: 20px;
+		margin-left: 5%;
+	}
+}
+
+.commercialaudits h1.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
+	
+.cap1 {
+    width: 78%; 
+    flex-shrink: 0; /* Prevents shrinking */
+    margin: 100px auto 100px auto; /* Centering */
+	color: white;
+	text-shadow: 0 0 .3rem black;
+	font-size: 24px;
+	line-height: 1.4em;
+	opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+@media (max-width: 480px) {
+	.cap1 {
+		font-size: 16px;
+		text-shadow: 0 0 .1rem black;
+		margin-top: 40px;
+		margin-bottom: 0;
+		width: 81%;
+	}
+}
+
+.cap1.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
+	
+.cap2 {
+    width: 78%; 
+    flex-shrink: 0; /* Prevents shrinking */
+    margin: 100px auto 100px auto; /* Centering */
+	color: white;
+	text-shadow: 0 0 .3rem black;
+	font-size: 24px;
+	line-height: 1.4em;
+	opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+@media (max-width: 480px) {
+	.cap2 {
+		font-size: 16px;
+		text-shadow: 0 0 .1rem black;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		width: 81%;
+	}
+}
+
+.cap2.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
+	
+video {
+	max-width: 600px;
+	height: auto;
+	margin: 0% auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	display: block;
+}
+
+@media (max-width: 480px) {
+	video{
+		max-width: 300px;
+	}
+}
+
+.video {
+	opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+.video.visible{
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */	
+}
+	
+.cap3 {
+    width: 78%; /* Keep text width at 45% */
+    flex-shrink: 0; /* Prevents shrinking */
+    margin: 100px auto 100px auto; /* Centering */
+	color: white;
+	text-shadow: 0 0 .3rem black;
+	font-size: 24px;
+	line-height: 1.4em;
+	opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+@media (max-width: 480px) {
+	.cap3 {
+		font-size: 16px;
+		text-shadow: 0 0 .1rem black;
+		margin-top: 40px;
+		margin-bottom: 0;
+		width: 81%;
+	}
+}
+
+.cap3.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
+	
+.industrialaudits h1{
+	color: white;
+	text-shadow: 0 0 .3rem black;
+	margin-top: 150px;
+	margin-left: 15%;
+	font-size: 28px;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+@media (max-width: 480px) {
+	.industrialaudits h1{
+		text-shadow: 0 0 .1rem black;
+		margin-top: 80px;
+		font-size: 20px;
+		margin-left: 5%;
+	}
+}
+
+.industrialaudits h1.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
+	
+.iap1 {
+    width: 78%; 
+    flex-shrink: 0; /* Prevents shrinking */
+    margin: 100px auto 100px auto; /* Centering */
+	color: white;
+	text-shadow: 0 0 .3rem black;
+	font-size: 24px;
+	line-height: 1.4em;
+	opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+@media (max-width: 480px) {
+	.iap1 {
+		font-size: 16px;
+		text-shadow: 0 0 .1rem black;
+		margin-top: 40px;
+		margin-bottom: 0;
+		width: 81%;
+	}
+}
+
+.iap1.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
+	
+.industrialauditsp2 {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items to the left */
+    gap: 100px; /* Reduce space between text and image */
+    flex-wrap: wrap; /* Prevents breaking on small screens */
+    color: white;
+    text-shadow: 0 0 .3rem black;
+    width: 90%; /* Center and keep within a reasonable width */
+    margin: 40px auto 100px auto; /* Centering */
+    padding: 5px;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+@media (max-width: 480px) {
+	.industrialauditsp2 {
+		text-shadow: 0 0 .1rem black;
+		gap: 50px;
+	}
+}
+
+.iap2 {
+    width: 45%; /* Keep text width at 45% */
+    flex-shrink: 0; /* Prevents shrinking */
+    margin: 0; /* Remove unnecessary margins */
+	font-size: 24px;
+	line-height: 1.4em;
+}
+
+@media (max-width: 480px) {
+	.iap2 {
+		width: 90%;
+		font-size: 16px;
+	}
+}
+
+.mfg-image {
+    width: 30%; /* Adjust based on preference */
+    min-width: 500px; 
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+	.mfg-image {
+		width: 75%;
+		min-width: 200px;
+	}
+}
+
+.industrialauditsp2.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
+	
+.industrialauditsp3 {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items to the left */
+    gap: 100px; /* Reduce space between text and image */
+    flex-wrap: wrap; /* Prevents breaking on small screens */
+    color: white;
+    text-shadow: 0 0 .3rem black;
+    width: 90%; /* Center and keep within a reasonable width */
+    margin: 40px auto 100px auto; /* Centering */
+    padding: 5px;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+@media (max-width: 480px) {
+	.industrialauditsp3 {
+		gap: 10px;
+		text-shadow: 0 0 .1rem black;
+		display: block;
+		margin-bottom: 0px;
+	}
+}
+
+.iap3 {
+    width: 45%; /* Keep text width at 45% */
+    flex-shrink: 0; /* Prevents shrinking */
+    margin: 0; /* Remove unnecessary margins */
+	font-size: 24px;
+	line-height: 1.4em;
+}
+
+@media (max-width: 480px) {
+	.iap3 {
+		font-size: 16px;
+		width: 90%;
+		margin: 0% auto;
+	}
+}
+
+.cost-image {
+    width: 20%; /* Adjust based on preference */
+    min-width: 200px; 
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+	.cost-image {
+		min-width: 100px;
+		float: left;
+		margin-right: 5px;
+	}
+}
+
+.industrialauditsp3.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
+	
+.iap4 {
+    width: 78%; 
+    flex-shrink: 0; /* Prevents shrinking */
+    margin: 100px auto 100px auto; /* Centering */
+	color: white;
+	text-shadow: 0 0 .3rem black;
+	font-size: 24px;
+	line-height: 1.4em;
+	opacity: 0; /* Hidden by default */
+    transform: translateY(40px); /* Initial position (slide up effect) */
+    transition: opacity 4s ease, transform 4s ease;
+}
+
+@media (max-width: 480px) {
+	.iap4 {
+		font-size: 16px;
+		text-shadow: 0 0 .1rem black;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		width: 81%;
+	}
+}
+
+.iap4.visible {
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Back to its original position */
+	}
 
 .list-contact {
     list-style: none; /* Removes bullets from this specific list */
@@ -785,3 +1268,4 @@ ul.services li{
 	.footer2 {
 		font-size: 10px;
 	}
+}
