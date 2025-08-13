@@ -207,7 +207,7 @@ body.loaded {
 
 @media (max-width: 480px) {
 	.slogan {
-		font-size: 20px;
+		font-size: 24px;
 		width: 90%;
 		padding-top: 50px;
 	}
@@ -225,7 +225,7 @@ body.loaded {
 
 @media (max-width: 480px) {
 	.bizdescript {
-		font-size: 14px;
+		font-size: 18px;
 		width: 90%;
 	}
 }
@@ -319,7 +319,7 @@ body.loaded {
 
 @media (max-width: 480px) {
 	.services h1 {
-		font-size: 20px;
+		font-size: 24px;
 		padding-bottom: 40px;
 	}
 }
@@ -374,9 +374,11 @@ body.loaded {
 	margin-top: 0px;
 }
 
+
 .codecontainer p{
 	font-size: 16px;
 }
+
 
 .operationscontainer{
 	background: #eefcff;
@@ -401,9 +403,11 @@ body.loaded {
 	margin-top: 0px;
 }
 
+
 .operationscontainer p{
 	font-size: 16px;
 }
+
 
 .auditcontainer{
 	display: flex;
@@ -455,20 +459,14 @@ body.loaded {
 }
 
 @media (max-width: 480px) {
-	.textcontainer{
-		line-height: 1.5em;
-	}
-}
-
-@media (max-width: 480px) {
 	.textcontainer h2{
-		font-size: 16px;
+		font-size: 24px;
 	}
 }
 
 @media (max-width: 480px) {
 	.textcontainer p{
-		font-size: 12px;
+		font-size: 18px;
 	}
 }
 
@@ -706,7 +704,7 @@ body.loaded {
 
 @media (max-width: 480px) {
 	.about h1{
-		font-size: 20px;
+		font-size: 24px;
 		padding-top: 40px;
 		padding-bottom: 40px;
 		margin-bottom: 0px;
@@ -760,7 +758,7 @@ body.loaded {
 
 @media (max-width: 480px) {
 	.backgroundcontainer h2{
-		font-size: 16px;
+		font-size: 22px;
 		padding-top: 0px;
 		padding-bottom: 20px;
 	}
@@ -786,7 +784,7 @@ body.loaded {
 
 @media (max-width: 480px) {
 	.missioncontainer h2{
-		font-size: 16px;
+		font-size: 22px;
 		padding-top: 0px;
 		padding-bottom: 20px;
 	}
@@ -830,7 +828,7 @@ body.loaded {
 
 @media (max-width: 480px) {
 	.technologycontainer h2{
-		font-size: 16px;
+		font-size: 22px;
 		padding-top: 0px;
 		padding-bottom: 20px;
 	}
@@ -921,7 +919,7 @@ body.loaded {
 
 @media (max-width: 480px) {
 	.cardcontent p {
-		font-size: 12px;
+		font-size: 18px;
 		line-height: 2em;
 	}
 }
@@ -939,7 +937,7 @@ body.loaded {
 
 @media (max-width: 480px) {
 	.formtitle h1 {
-		font-size: 20px;
+		font-size: 24px;
 	}
 }
 
@@ -965,6 +963,12 @@ body.loaded {
 @media (max-width: 950px) {
 	.contact-inputs {
 		width: 85%;
+	}
+}
+
+@media (max-width: 480px) {
+	.contact-inputs {
+		font-size: 18px;
 	}
 }
 
@@ -1108,7 +1112,7 @@ body.loaded {
 @media (max-width: 480px) {
 	.introductioncea h2 {
 		font-size: 16px;
-		width: 90%;
+		width: 80%;
 		margin-left: 10%;
 		margin-top: 20px;
 		padding-top: 0px;
@@ -1206,9 +1210,10 @@ body.loaded {
 
 @media (max-width: 480px) {
 	.overview h1{
-		font-size: 18px;
+		font-size: 20px;
 		padding-top: 0px;
 		margin-top: 0px;
+		margin-left: 11%;
 	}
 }
 
@@ -1239,7 +1244,7 @@ body.loaded {
 
 @media (max-width: 480px) {
 	.line1 p{
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.5em;
 	}
 }
@@ -1324,7 +1329,7 @@ body.loaded {
 
 @media (max-width: 480px) {
 	.line2 p{
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.5em;
 	}
 }
@@ -1401,7 +1406,7 @@ video {
 
 @media (max-width: 480px) {
 	.line3 p{
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.5em;
 	}
 }
@@ -1433,7 +1438,7 @@ video {
 
 @media (max-width: 480px) {
 	.line4 p{
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.5em;
 	}
 }
