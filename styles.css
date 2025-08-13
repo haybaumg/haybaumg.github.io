@@ -1,8 +1,8 @@
 @font-face {
 	font-family: 'Roboto Medium'; 
-	src: url('Fonts/Roboto/Roboto-Medium.ttf');
+	src: url('Fonts/Roboto/Roboto-Medium.ttf') format('truetype'), url('Fonts/Roboto/Roboto-Medium.eot') format('truetype'), url('Fonts/Roboto/Roboto-Medium.woff') format('woff');
 	font-family: 'Roboto Regular';
-	src: url('Fonts/Roboto/Roboto-Regular.ttf');
+	src: url('Fonts/Roboto/Roboto-Regular.ttf') format('truetype'), url('Fonts/Roboto/Roboto-Regular.eot') format('truetype'), url('Fonts/Roboto/Roboto-Regular.woff') format('woff');;
 }
 
 body {
@@ -2313,3 +2313,4 @@ video {
 		margin: 0 auto;
 	}
 }
+
